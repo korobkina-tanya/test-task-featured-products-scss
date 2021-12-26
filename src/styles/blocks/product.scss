@@ -28,17 +28,17 @@ img {
 .featured-products__list {
   display: grid;
   grid-template-columns: repeat(4, 300px);
-  list-style-type: none;
   margin: 0;
   padding: 0;
   gap: 91px;
+  list-style-type: none;
 }
 
 .featured-products__items {
-  outline: 3px solid transparent;
-  border-bottom: 1px solid #e5e5e5;
   margin-top: 51px;
   padding-bottom: 350px;
+  outline: 3px solid transparent;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .featured-products__items:hover {
@@ -152,17 +152,17 @@ img {
 
 @media (max-width: 810px) {
   .featured-products__items {
-    border-bottom: 1px solid #e5e5e5;
     margin-top: 50px;
     padding-bottom: 50px;
+    border-bottom: 1px solid #e5e5e5;
   }
 }
 
 @media (max-width: 375px) {
   .featured-products__items {
-    border-bottom: 1px solid #e5e5e5;
     margin-top: 40px;
     padding-bottom: 40px;
+    border-bottom: 1px solid #e5e5e5;
   }
 }
 
