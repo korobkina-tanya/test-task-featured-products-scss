@@ -77,18 +77,18 @@ img {
   padding-bottom: 350px;
   outline: 3px solid transparent;
   border-bottom: 1px solid #e5e5e5;
-}
 
-.featured-products__items:hover {
-  opacity: 0.8;
-}
+  &:hover {
+    opacity: 0.8;
+  }
 
-.featured-products__items:focus {
-  opacity: 1;
-}
+  &:focus {
+    opacity: 1;
+  }
 
-.featured-products__items:active {
-  opacity: 0.4;
+  &:active {
+    opacity: 0.4;
+  }
 }
 
 @media (max-width: 810px) {
