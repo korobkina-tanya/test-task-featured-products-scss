@@ -1,5 +1,5 @@
 {
-  "name": "test-task-featured-products",
+  "name": "test-task-featured-products-scss",
   "version": "1.0.0",
   "description": "",
   "main": ".stylelintrc.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/korobkina-tanya/test-task-featured-products.git"
+    "url": "git+https://github.com/korobkina-tanya/test-task-featured-products-scss.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/korobkina-tanya/test-task-featured-products/issues"
+    "url": "https://github.com/korobkina-tanya/test-task-featured-products-scss/issues"
   },
-  "homepage": "https://github.com/korobkina-tanya/test-task-featured-products#readme",
+  "homepage": "https://github.com/korobkina-tanya/test-task-featured-products-scss#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.0",
     "browser-sync": "^2.27.7",
