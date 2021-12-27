@@ -1,3 +1,9 @@
+// Viewports
+
+$tablet-width: 810px;
+$desktop-width: 1920px;
+$mobile-width-only: 375px;
+
 $font-family-stack: "Roboto", sans-serif;
 $font-size-stack: 15px;
 
@@ -11,20 +17,7 @@ $font-size-stack: 15px;
 }
 
 .page-main {
-  width: 1920px;
   margin: 0 auto;
-}
-
-@media (max-width: 810px) {
-  .page-main {
-    width: 810px;
-  }
-}
-
-@media (max-width: 375px) {
-  .page-main {
-    width: 375px;
-  }
 }
 
 a {
@@ -48,12 +41,12 @@ img {
   color: #000000;
   background-color: #ffffff;
 
-  @media (max-width: 810px) {
+  @media (max-width: $tablet-width) {
     font-size: 48px;
     line-height: 56px;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: $mobile-width-only) {
     font-size: 24px;
     line-height: 28px;
   }
@@ -67,11 +60,11 @@ img {
   gap: 91px;
   list-style-type: none;
 
-  @media (max-width: 810px) {
+  @media (max-width: $tablet-width) {
     display: block;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: $mobile-width-only) {
     display: block;
   }
 }
@@ -82,13 +75,13 @@ img {
   outline: 3px solid transparent;
   border-bottom: 1px solid #e5e5e5;
 
-  @media (max-width: 810px) {
+  @media (max-width: $tablet-width) {
     margin-top: 50px;
     padding-bottom: 50px;
     border-bottom: 1px solid #e5e5e5;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: $mobile-width-only) {
     margin-top: 40px;
     padding-bottom: 40px;
     border-bottom: 1px solid #e5e5e5;
@@ -147,14 +140,14 @@ img {
   }
 }
 
-@media (max-width: 810px) {
+@media (max-width: $tablet-width) {
   .selected-product__item p {
     font-size: 17px;
     line-height: 27px;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: $mobile-width-only) {
   .selected-product__item p {
     font-size: 17px;
     line-height: 27px;
@@ -164,7 +157,7 @@ img {
 .hidden-text {
   display: none;
 
-  @media (max-width: 810px) {
+  @media (max-width: $tablet-width) {
     display: block;
   }
 }
@@ -184,13 +177,13 @@ img {
   color: #6c9e42;
 }
 
-@media (max-width: 810px) {
+@media (max-width: $tablet-width) {
   .selected-product__item {
     display: flex;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: $mobile-width-only) {
   .selected-product__item {
     display: block;
   }
