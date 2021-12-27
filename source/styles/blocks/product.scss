@@ -1,3 +1,15 @@
+$font-family-stack: "Roboto", sans-serif;
+$font-size-stack: 15px;
+
+.page__body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: $font-family-stack;
+  font-size: $font-size-stack;
+  line-height: 23px;
+}
+
 .page-main {
   width: 1920px;
   margin: 0 auto;
