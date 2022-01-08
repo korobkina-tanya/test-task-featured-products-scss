@@ -14,9 +14,11 @@ html {
   transform-origin: center;
 }
 
+/*
 *:focus {
   outline: none !important;
 }
+*/
 
 html {
   height: 100%;
@@ -25,13 +27,13 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
-  background: $white;
-  color: $gray-d1;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 23px;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 button,
@@ -42,13 +44,11 @@ textarea {
   font-size: 100%;
 }
 
+
 a {
   appearance: none;
-
-  &,
-  &:hover {
-    text-decoration: none;
-  }
+  background-color: transparent;
+  text-decoration: none;
 }
 
 h1,
@@ -65,8 +65,8 @@ p {
 }
 
 ul {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 li {
@@ -109,13 +109,13 @@ button {
 .container {
   width: 100%;
   min-width: 320px;
-  max-width: 1580px;
-  padding-left: 24px;
-  padding-right: 24px;
+  max-width: 1634px;
+  padding-left: 92px;
+  padding-right: 92px;
   margin: 0 auto;
-
+/*
   @include mobile {
     padding-left: 16px;
     padding-right: 16px;
-  }
+  }*/
 }
