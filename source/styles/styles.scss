@@ -1,3 +1,240 @@
 // @import "blocks/common";
 // @import "blocks/visually-hidden";
 // @import "blocks/product";
+
+.page {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 23px;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+img {
+  padding-bottom: 35px;
+  padding-left: 4px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.main-content {
+  width: 1920px;
+  margin: 0 auto;
+}
+
+.featured-products-title {
+  margin: 0;
+  padding: 0;
+  padding-left: 4px;
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 900;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.featured-products-list {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  margin: 0;
+  padding: 0;
+  gap: 91px;
+  list-style-type: none;
+}
+
+.featured-products-items {
+  margin-top: 51px;
+  padding-bottom: 350px;
+  outline: 3px solid transparent;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.featured-products-items:hover {
+  opacity: 0.8;
+}
+
+.featured-products-items:focus {
+  opacity: 1;
+}
+
+.featured-products-items:active {
+  opacity: 0.4;
+}
+
+.featured-product-link {
+  display: block;
+}
+
+.featured-product-link div {
+  padding-left: 0;
+}
+
+.featured-product-title {
+  margin: 0;
+  padding: 0;
+  padding-left: 4px;
+  padding-bottom: 11px;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #181818;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+
+.featured-product-subtitile {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 9px;
+  padding-left: 4px;
+  font-size: 17px;
+  color: #181818;
+  background-color: #ffffff;
+}
+
+.featured-product-text {
+  margin: 0;
+  padding: 0;
+  padding-left: 4px;
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 300;
+  color: #181818;
+  background-color: #ffffff;
+}
+
+.featured-product-preudolink {
+  margin: 0;
+  padding: 0;
+  padding-left: 4px;
+  line-height: 21px;
+  font-weight: 500;
+  text-decoration: underline;
+  color: #3546a6;
+}
+
+.featured-product-link:hover .featured-product-preudolink {
+  font-weight: 700;
+  color: #6c9e42;
+}
+
+// @media (max-width: 810px) {
+//   .page-main {
+//     width: 810px;
+//   }
+// }
+
+// @media (max-width: 375px) {
+//   .page-main {
+//     width: 375px;
+//   }
+// }
+
+// @media (max-width: 810px) {
+//   img {
+//     padding-bottom: 0;
+//   }
+// }
+
+// @media (max-width: 375px) {
+//   img {
+//     padding-bottom: 35px;
+//   }
+// }
+
+// @media (max-width: 810px) {
+//   .featured-products-title {
+//     font-size: 48px;
+//     line-height: 56px;
+//   }
+// }
+
+// @media (max-width: 375px) {
+//   .featured-products-title {
+//     font-size: 24px;
+//     line-height: 28px;
+//   }
+// }
+
+// @media (max-width: 810px) {
+//   .featured-products__list {
+//     display: block;
+//   }
+// }
+
+// @media (max-width: 375px) {
+//   .featured-products__list {
+//     display: block;
+//   }
+// }
+
+// @media (max-width: 810px) {
+//   .featured-products__items {
+//     margin-top: 50px;
+//     padding-bottom: 50px;
+//     border-bottom: 1px solid #e5e5e5;
+//   }
+// }
+
+// @media (max-width: 375px) {
+//   .featured-products__items {
+//     margin-top: 40px;
+//     padding-bottom: 40px;
+//     border-bottom: 1px solid #e5e5e5;
+//   }
+// }
+
+// @media (max-width: 810px) {
+//   .selected-product__item {
+//     display: flex;
+//   }
+// }
+
+// @media (max-width: 375px) {
+//   .selected-product__item {
+//     display: block;
+//   }
+// }
+
+// @media (max-width: 810px) {
+//   .selected-product__item div {
+//     padding-left: 50px;
+//   }
+// }
+
+// @media (max-width: 375px) {
+//   .selected-product__item div {
+//     padding-left: 0;
+//   }
+// }
+
+// @media (max-width: 810px) {
+//   .selected-product__item p {
+//     font-size: 17px;
+//     line-height: 27px;
+//   }
+// }
+
+// @media (max-width: 375px) {
+//   .selected-product__item p {
+//     font-size: 17px;
+//     line-height: 27px;
+//   }
+// }
+
+// @media (max-width: 810px) {
+//   .hidden-text {
+//     display: block;
+//   }
+// }

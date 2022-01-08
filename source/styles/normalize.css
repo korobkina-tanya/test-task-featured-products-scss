@@ -27,7 +27,7 @@ body {
   flex-direction: column;
   height: 100vh;
   font-size: 16px;
-  font-family: $gordita;
+  font-family: "Roboto", sans-serif;
   background: $white;
   color: $gray-d1;
   margin: 0;
