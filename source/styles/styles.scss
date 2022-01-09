@@ -32,7 +32,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5;
   color: $black;
   background-color: $white;
@@ -128,3 +128,4 @@ button {
 .footer {
   flex-shrink: 0;
 }
+

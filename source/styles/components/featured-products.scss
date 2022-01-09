@@ -1,21 +1,22 @@
 .featured-products-title {
-  font-weight: 700;
-  padding: 0 0 0 4px;
+  font-weight: 900;
+  padding: 0;
   margin: 0;
 
   @include mobile {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.5rem;
+    line-height: 2;
   }
 
   @include tablet {
-    font-size: 48px;
-    line-height: 56px;
+    font-size: 3rem;
+    padding: 24px 0 32px 0;
+
   }
 
   @include desktop {
-    font-size: 60px;
-    line-height: 76px;
+    font-size: 3.75rem;
+    padding: 72px 0 40px 0;
   }
 }
 
@@ -80,7 +81,7 @@
   &::after {
     content: "";
     position: absolute;
-    background-color: #e5e5e5;
+    background-color: $grey;
     height: 1px;
 
     @include mobile {
@@ -105,7 +106,7 @@
     opacity: 0.8;
 
     .featured-product-preudolink {
-      color: #6c9e42;
+      color: $green;
     }
   }
 
@@ -161,23 +162,49 @@
   font-size: 1.5rem;
   line-height: 2;
   font-weight: 700;
-  color: #181818;
+  color: $black-light;
   margin: 0;
-  padding: 0;
+
+  @include mobile {
+    padding: 16px 0 0 0;
+  }
+
+  @include tablet {
+    line-height: 1;
+    padding: 0;
+  }
+
+  @include desktop {
+    padding: 16px 0 0 0;
+  }
+
 }
 
 .featured-product-subtitle {
   display: flex;
   font-size: 1rem;
   line-height: 1.5;
-  font-weight: 400;
-  color: #181818;
+  font-weight: 500;
+  word-spacing: 0.5rem;
+  color: $black-light;
   margin: 0;
-  padding: 0;
+
+  @include mobile {
+    padding: 0 0 8px 0;
+  }
+
+  @include tablet {
+    padding: 12px 0 8px 0;
+  }
+
+  @include desktop {
+    padding: 0 0 8px 0;
+  }
+
 }
 
 $featured-product-text-font-size: 1rem;
-$featured-product-text-line-height: 1.5;
+$featured-product-text-line-height: 1.7;
 $featured-product-text-lines-to-show: 6;
 
 .featured-product-text {
@@ -187,7 +214,8 @@ $featured-product-text-lines-to-show: 6;
   font-size: $featured-product-text-font-size;
   line-height: $featured-product-text-line-height;
   font-weight: 300;
-  color: #181818;
+  word-spacing: 0.1rem;
+  color: $black-light;
   -webkit-line-clamp: $featured-product-text-lines-to-show;
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -199,9 +227,9 @@ $featured-product-text-lines-to-show: 6;
   line-height: 1.5;
   font-weight: 500;
   text-decoration: underline;
-  color: #3546a6;
+  color: $blue;
   margin: 0;
-  padding: 0;
+  padding: 16px 0 0 0;
 }
 
 ///////////////////////
