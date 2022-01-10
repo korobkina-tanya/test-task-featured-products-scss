@@ -4,8 +4,8 @@
   margin: 0;
 
   @include mobile {
-    font-size: 1.5rem;
-    line-height: 2;
+    font-size: 2rem;
+    padding: 36px 0 32px 0;
   }
 
   @include tablet {
@@ -16,7 +16,7 @@
 
   @include desktop {
     font-size: 3.75rem;
-    padding: 72px 0 40px 0;
+    padding: 70px 0 40px 0;
   }
 }
 
@@ -53,7 +53,7 @@
 
   @include mobile {
     width: 100%;
-    padding: 0;
+    padding: 40px 0;
   }
 
   @include tablet {
@@ -85,6 +85,7 @@
     height: 1px;
 
     @include mobile {
+      flex-direction: row;
       bottom: 0;
       left: 0;
       right: 0;
@@ -94,7 +95,7 @@
       flex-direction: row;
       bottom: 0;
       left: 0;
-      right: -16px;
+      right: -32px;
     }
 
     @include desktop {
@@ -166,7 +167,7 @@
   margin: 0;
 
   @include mobile {
-    padding: 16px 0 0 0;
+    padding: 0;
   }
 
   @include tablet {
@@ -175,9 +176,8 @@
   }
 
   @include desktop {
-    padding: 16px 0 0 0;
+    padding: 14px 0 0 0;
   }
-
 }
 
 .featured-product-subtitle {
@@ -185,22 +185,23 @@
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 500;
-  word-spacing: 0.5rem;
   color: $black-light;
   margin: 0;
 
   @include mobile {
+    word-spacing: 0.6rem;
     padding: 0 0 8px 0;
   }
 
   @include tablet {
+    word-spacing: 0.5rem;
     padding: 12px 0 8px 0;
   }
 
   @include desktop {
+    word-spacing: 0.5rem;
     padding: 0 0 8px 0;
   }
-
 }
 
 $featured-product-text-font-size: 1rem;
@@ -214,12 +215,23 @@ $featured-product-text-lines-to-show: 6;
   font-size: $featured-product-text-font-size;
   line-height: $featured-product-text-line-height;
   font-weight: 300;
-  word-spacing: 0.1rem;
   color: $black-light;
   -webkit-line-clamp: $featured-product-text-lines-to-show;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+
+  @include mobile {
+    word-spacing: 0.1rem;
+  }
+
+  @include tablet {
+    word-spacing: 0.2rem;
+  }
+
+  @include desktop {
+    word-spacing: 0.1rem;
+  }
 }
 
 .featured-product-preudolink {
