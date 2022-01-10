@@ -11,7 +11,6 @@
   @include tablet {
     font-size: 3rem;
     padding: 24px 0 32px 0;
-
   }
 
   @include desktop {
@@ -77,6 +76,7 @@
 .featured-product-link {
   display: flex;
   width: 100%;
+  transition: background-color 1s linear;
 
   &::after {
     content: "";
@@ -104,7 +104,7 @@
   }
 
   &:hover {
-    opacity: 0.8;
+    background-color: $blue-light;
 
     .featured-product-preudolink {
       color: $green;
@@ -112,7 +112,11 @@
   }
 
   &:active {
-    opacity: 1;
+    background-color: $blue-light;
+  }
+
+  .block-animation {
+    transition-duration: 4s;
   }
 
   @include mobile {
