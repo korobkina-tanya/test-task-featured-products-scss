@@ -107,7 +107,7 @@
     background-color: $blue-light;
 
     .featured-product-preudolink {
-      color: $green;
+      color: $black;
     }
   }
 
@@ -116,7 +116,7 @@
   }
 
   .block-animation {
-    transition-duration: 4s;
+    transition-duration: 2s;
   }
 
   @include mobile {
@@ -135,6 +135,7 @@
 .featured-product-img {
   width: 100%;
   max-width: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 
   @include tablet {
     width: 200px;
