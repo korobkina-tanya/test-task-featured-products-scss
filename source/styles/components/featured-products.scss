@@ -1,21 +1,20 @@
 .featured-products-title {
   font-weight: 900;
   padding: 0;
-  margin: 0;
 
   @include mobile {
     font-size: 2rem;
-    padding: 36px 0 32px 0;
+    margin: 40px 0 0 0;
   }
 
   @include tablet {
     font-size: 3rem;
-    padding: 24px 0 32px 0;
+    margin: 24px 0 32px 0;
   }
 
   @include desktop {
     font-size: 3.75rem;
-    padding: 70px 0 40px 0;
+    margin: 70px 0 40px 0;
   }
 }
 
@@ -77,6 +76,7 @@
   display: flex;
   width: 100%;
   transition: background-color 1s linear;
+  line-height: 0;
 
   &::after {
     content: "";
@@ -104,7 +104,7 @@
   }
 
   &:hover {
-    background-color: $blue-light;
+    background-color: $green-light;
 
     .featured-product-preudolink {
       color: $black;
@@ -112,7 +112,7 @@
   }
 
   &:active {
-    background-color: $blue-light;
+    background-color: $green-light;
   }
 
   .block-animation {
@@ -133,9 +133,15 @@
 }
 
 .featured-product-img {
-  width: 100%;
   max-width: 100%;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 8px 8px 16px rgba($black, 0.18);
+}
+
+.featured-product-img-wrapper {
+
+  @include mobile {
+    width: calc(100% - 9px);
+  }
 
   @include tablet {
     width: 200px;
@@ -169,19 +175,18 @@
   line-height: 2;
   font-weight: 700;
   color: $black-light;
-  margin: 0;
+  padding: 0;
 
   @include mobile {
-    padding: 0;
+    margin: 12px 0 0 0;
   }
 
   @include tablet {
-    line-height: 1;
-    padding: 0;
+    margin: -12px 0 0 0;
   }
 
   @include desktop {
-    padding: 14px 0 0 0;
+    margin: 14px 0 0 0;
   }
 }
 
@@ -191,21 +196,21 @@
   line-height: 1.5;
   font-weight: 500;
   color: $black-light;
-  margin: 0;
+  padding: 0;
 
   @include mobile {
     word-spacing: 0.6rem;
-    padding: 0 0 8px 0;
+    margin: 0 0 8px 0;
   }
 
   @include tablet {
     word-spacing: 0.5rem;
-    padding: 12px 0 8px 0;
+    margin: 12px 0 8px 0;
   }
 
   @include desktop {
     word-spacing: 0.5rem;
-    padding: 0 0 8px 0;
+    margin: 0 0 8px 0;
   }
 }
 
@@ -245,8 +250,6 @@ $featured-product-text-lines-to-show: 6;
   font-weight: 500;
   text-decoration: underline;
   color: $blue;
-  margin: 0;
-  padding: 16px 0 0 0;
+  padding: 0;
+  margin: 16px 0 0 0;
 }
-
-///////////////////////
