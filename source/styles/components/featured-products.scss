@@ -14,7 +14,7 @@
 
   @include desktop {
     font-size: 3.75rem;
-    margin: 70px 0 40px 0;
+    margin: 70px 0 0 0;
   }
 }
 
@@ -78,6 +78,18 @@
   transition: background-color 1s linear;
   line-height: 0;
 
+  @include mobile {
+    margin: -12px 0 0 0;
+  }
+
+  @include tablet {
+    margin: 0;
+  }
+
+  @include desktop {
+    margin: 40px 0 0 0;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -133,15 +145,11 @@
 }
 
 .featured-product-img {
-  max-width: 100%;
+  width: 100%;
   box-shadow: 8px 8px 16px rgba($black, 0.18);
 }
 
 .featured-product-img-wrapper {
-
-  @include mobile {
-    width: calc(100% - 9px);
-  }
 
   @include tablet {
     width: 200px;
@@ -178,7 +186,7 @@
   padding: 0;
 
   @include mobile {
-    margin: 12px 0 0 0;
+    margin: 20px 0 0 0;
   }
 
   @include tablet {
@@ -186,7 +194,7 @@
   }
 
   @include desktop {
-    margin: 14px 0 0 0;
+    margin: 20px 0 0 0;
   }
 }
 
@@ -197,20 +205,18 @@
   font-weight: 500;
   color: $black-light;
   padding: 0;
+  margin: 0;
 
   @include mobile {
     word-spacing: 0.6rem;
-    margin: 0 0 8px 0;
   }
 
   @include tablet {
     word-spacing: 0.5rem;
-    margin: 12px 0 8px 0;
   }
 
   @include desktop {
     word-spacing: 0.5rem;
-    margin: 0 0 8px 0;
   }
 }
 
@@ -233,14 +239,17 @@ $featured-product-text-lines-to-show: 6;
 
   @include mobile {
     word-spacing: 0.1rem;
+    margin: 8px 0 0 0;
   }
 
   @include tablet {
     word-spacing: 0.2rem;
+    margin: 8px 0 0 0;
   }
 
   @include desktop {
     word-spacing: 0.1rem;
+    margin: 8px 0 0 0;
   }
 }
 
